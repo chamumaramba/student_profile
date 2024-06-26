@@ -13,7 +13,7 @@ export const ProfileInput = ({ content, label, val, isBool, onChange }) => {
           {label}
         </Checkbox>
       ) : (
-        <Input label={label} value={val} onChange={handleChange} fullWidth />
+        <Input label={label} value={val} onChange={handleChange} fullWidth readOnly={!onChange}/>
       )}
     </div>
   );
