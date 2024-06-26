@@ -4,6 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  /* --background-rgb: 25, 49, 74; */
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -17,13 +18,20 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
+      #19314a
+    ),
     rgb(var(--background-start-rgb));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
 
 @layer utilities {
@@ -31,3 +39,6 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
