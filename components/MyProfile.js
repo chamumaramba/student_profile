@@ -61,7 +61,7 @@ const MyProfile = () => {
   };
 
   const saveChanges = () => {
-    alert(JSON.stringify(editedData)); // Example alert for editedData
+    alert(JSON.stringify(editedData)); 
   };
 
   if (loading) {

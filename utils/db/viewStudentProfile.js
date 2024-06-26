@@ -4,7 +4,7 @@ const viewStudentProfile = async (id) => {
     // Dummy data to simulate fetching profile from a database
     return {
       name: "Makanaka Maramba",
-      avatar: "C:\Users\Trust Maramba\Downloads\businessman-310819_1280.png",
+      avatar: "/images/man.png",
       email: "makanakamaramba@example.com",
       age: 25,
       program: "Computer Science",
